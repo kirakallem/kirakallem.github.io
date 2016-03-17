@@ -1,6 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 
 /* Homepage */
+/* Mobile Media Query Homepage */
+@media screen and (max-width: 969px) {
+ 
+  .glasses {
+    width: 80%;
+    margin-bottom: 0;
+    opacity: 0;
+  }
+ 
+  .cool {
+    opacity: 0;
+  }
+  
+}
+
 .cool {
   text-align: center;
   font-family: 'Raleway', sans-serif;
@@ -72,7 +87,7 @@ button:visited {
 
 /* About and Resume */
 
-.selfie {
+  .selfie {
   width: 80%;
   margin: 0 auto;
   margin-bottom: -10.13em;
@@ -94,7 +109,6 @@ button:visited {
   color: #727072;
   width: 45%;
   margin: 0 auto;
-  margin-top: 3em;
   padding: 10px;
   position: relative;
   left: 8em;
@@ -109,7 +123,6 @@ h1{
   letter-spacing: .1em;
   text-align: center;
   background: #C9C5CB;
-  padding: 5px;
   margin-top: 2em;
 }
 
@@ -152,6 +165,27 @@ hr {
   color: #C3F3EC;
 }
 
+/* Mobile Media Query Resume */
+@media screen and (max-width: 320px) {
+ 
+  h5 {
+    opacity: 0;
+  }
+ 
+  section {
+    width: 100%;
+    padding: 1em;
+  }
+  
+  h3 {
+    margin-top: 1em;
+  }
+  
+  .specific {
+    margin-bottom: 1em;
+  }
+}
+
 .general {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
@@ -179,6 +213,7 @@ section {
   margin: 0 auto;
   padding: 10px;
 }
+
 
 /* Navigation */
 nav {
@@ -220,6 +255,26 @@ a:hover {
 }
 
 /* Portfolio */
+
+@media screen and (max-width: 320px) {
+  
+  .gallery div{
+    float: none;
+  }
+  
+  .gone {
+    opacity: 0;
+  }
+  
+  .bottom {
+    padding: 0;
+  }
+  
+  .gallery img{
+    width: 8em;
+  }
+}
+
 .gallery {
   width: 52em;
   height: 30.3em;
@@ -273,7 +328,6 @@ h4 {
   padding: 10px;
   text-transform: uppercase;
 }
-
 
 /* Contact Form */
 form {
